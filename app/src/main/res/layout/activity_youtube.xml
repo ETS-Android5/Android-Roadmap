@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_gd2"
+    tools:context=".YoutubeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="@font/alegreya"
+        android:layout_marginTop="60dp"
+        android:text="Before Going any further, you should have a look at the video given below. This video gives you some tips/advice for new programmers."
+        android:id="@+id/txtYoutube"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerCardView"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="7dp"
+        android:padding="20dp">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="vVRCJ52g5m4"
+            app:autoPlay="false"
+            app:showFullScreenButton="true"
+            app:showSeekBar="true"
+            app:showVideoCurrentTime="true"
+            app:showVideoDuration="true"
+            app:showYouTubeButton="true"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roadmap"
+        android:id="@+id/btnRoadmao"
+        android:backgroundTint="#43CEA2"
+        android:layout_below="@+id/playerCardView"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

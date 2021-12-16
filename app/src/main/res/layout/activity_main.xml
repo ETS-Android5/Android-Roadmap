@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainActivityParent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgSplash1"
+        android:layout_width="186dp"
+        android:layout_height="191dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211"
+        app:srcCompat="@drawable/splash1" />
+
+    <Button
+        android:id="@+id/btnDiveIn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dive In!"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/imgSplash1"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash1"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="327dp"
+        android:layout_height="96dp"
+        android:text="We hope you\'re doing great! Want to become an android developer but don\'t know where to start? Don\'t worry, we got it covered! This application is made to help people like you! So without any wasting time, click the button below."
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnDiveIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash1"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textColor="@color/grey"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvIntro"
+        app:layout_constraintEnd_toEndOf="@+id/imgSplash1"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSplash1"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash1"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Learner!"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvIntro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSplash1"
+        app:layout_constraintTop_toBottomOf="@+id/tvHello"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--    3-->
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anim_bg2"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgSplash2"
+        app:srcCompat="@drawable/splash2"
+        android:layout_width="186dp"
+        android:layout_height="191dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211"
+        />
+
+    <Button
+        android:id="@+id/btnProceed"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF02537F"
+        android:text="Proceed"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/imgSplash2"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash2"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <TextView
+        android:id="@+id/tvPurCon"
+        android:layout_width="327dp"
+        android:layout_height="116dp"
+        android:text="We have noticed so many people want to become an Android Developer but they didn\'t get succeded because of lack of guidance. The sole purpose of this application is to guide newbies in their path of becoming an Android Developer."
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnProceed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash2"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/tvPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purpose"
+        android:textColor="@color/teal_700"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvPurCon"
+        app:layout_constraintEnd_toEndOf="@+id/imgSplash2"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSplash2"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash2"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/tvOfApplication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Of This Application"
+        android:visibility="gone"
+        android:textColor="#02537F"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvPurCon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSplash2"
+        app:layout_constraintTop_toBottomOf="@+id/tvPurpose"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--    4-->
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anim_bg3"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgSplash3"
+        app:srcCompat="@drawable/splash3"
+        android:layout_width="186dp"
+        android:layout_height="191dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211"
+        />
+
+    <Button
+        android:id="@+id/btnLetsGo"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Let\'s Go!"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/imgSplash3"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash3"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <TextView
+        android:id="@+id/tvExp"
+        android:layout_width="327dp"
+        android:layout_height="136dp"
+        android:text="We have kept things simple and point to point, making them easier for everyone to understand.\n\nNote: This application only tells you the path to become an android developer. It doesn\'t have tutorials. Though it does have some e-books in the end."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnLetsGo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash3"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <TextView
+        android:id="@+id/tvEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy &amp;"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvExp"
+        app:layout_constraintEnd_toEndOf="@+id/imgSplash3"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSplash3"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash3"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/tvStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step-by-Step \nProcess"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvExp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSplash3"
+        app:layout_constraintTop_toBottomOf="@+id/tvEasy"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
